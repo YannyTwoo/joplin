@@ -169,7 +169,7 @@ The Web Clipper is a browser extension that allows you to save web pages and scr
 
 Joplin was designed as a replacement for Evernote and so can import complete Evernote notebooks, as well as notes, tags, resources (attached files) and note metadata (such as author, geo-location, etc.) via ENEX files. In terms of data, the only two things that might slightly differ are:
 
-- Recognition data - Evernote images, in particular scanned (or photographed) documents have [recognition data](https://en.wikipedia.org/wiki/Optical_character_recognition) associated with them. It is the text that Evernote has been able to recognise in the document. This data is not preserved when the note are imported into Joplin. However, should it become supported in the search tool or other parts of Joplin, it should be possible to regenerate this recognition data since the actual image would still be available.
+- Recognition data - Evernote images, in particular scanned (or photographed) documents have [recognition data](https://en.wikipedia.org/wiki/Optical_character_recognition) associated with them. It is the text that Evernote has been able to recognise in the document. This data is not preserved when the notes are imported into Joplin. However, should it become supported in the search tool or other parts of Joplin, it should be possible to regenerate this recognition data since the actual image would still be available.
 
 - Colour, font sizes and faces - Evernote text is stored as HTML and this is converted to Markdown during the import process. For notes that are mostly plain text or with basic formatting (bold, italic, bullet points, links, etc.) this is a lossless conversion, and the note, once rendered back to HTML should be very similar. Tables are also imported and converted to Markdown tables. For very complex notes, some formatting data might be lost - in particular colours, font sizes and font faces will not be imported. The text itself however is always imported in full regardless of formatting. If it is essential that this extra data is preserved then Joplin also allows import of ENEX files as HTML.
 
@@ -382,7 +382,7 @@ You can also use search filters to further restrict the search.
 
 | Operator | Description | Example |
 | --- | --- | --- |
-|**-**|If placed before a text term, it excludes the notes that contain that term. You can also place it before a filter to negate it. |`-spam` searches for all notes without the word `spam`.<br>`office -trash` searches for all notes with the word`office` and without the word `trash`.|
+|**-**|If placed before a text term, it excludes the notes that contain that term. You can also place it before a filter to negate it. |`-spam` searches for all notes without the word `spam`.<br>`office -trash` searches for all notes with the word `office` and without the word `trash`.|
 |**any:**|Return notes that satisfy any/all of the required conditions. `any:0` is the default, which means all conditions must be satisfied.|`any:1 cat dog` will return notes that have the word `cat` or `dog`.<br>`any:0 cat dog` will return notes with both the words `cat` and `dog`. |
 | **title:** <br> **body:**|Restrict your search to just the title or the body field.|`title:"hello world"` searches for notes whose title contains `hello` and `world`.<br>`title:hello -body:world` searches for notes whose title contains `hello` and body does not contain `world`.
 | **tag:** |Restrict the search to the notes with the specified tags.|`tag:office` searches for all notes having tag office.<br>`tag:office tag:important` searches for all notes having both office and important tags.<br>`tag:office -tag:spam` searches for notes having tag `office` which do not have tag `spam`.<br>`any:1 tag:office tag:spam` searches for notes having tag `office` or tag `spam`.<br>`tag:be*ful` does a search with wildcards.<br>`tag:*` returns all notes with tags.<br>`-tag:*` returns all notes without tags.|
@@ -442,7 +442,7 @@ Name | Description
 [Support Forum](https://discourse.joplinapp.org/) | This is the main place for general discussion about Joplin, user support, software development questions, and to discuss new features. Also where the latest beta versions are released and discussed.
 [Sub-reddit](https://www.reddit.com/r/joplinapp/) | Also a good place to get help
 [Discord server](https://discordapp.com/invite/d2HMPwE) | Our chat server
-[Patreon page](https://www.patreon.com/joplin) |The latest news are often posted there
+[Patreon page](https://www.patreon.com/joplin) |The latest news is often posted there
 [Mastodon feed](https://mastodon.social/@joplinapp) | Follow us on Mastodon
 [Twitter feed](https://twitter.com/joplinapp) | Follow us on Twitter
 
